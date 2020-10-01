@@ -1,0 +1,197 @@
+*{
+    margin-top: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+.body{
+    font-size: 20px;
+    
+}
+header{
+    
+    background-image:url('../images/digital.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height:60vh;
+    
+    
+    
+}
+
+.clearfix:after{
+    content: ".";
+    visibility: hidden;
+        display: block;
+        height : 0px;
+        clear: both;
+}
+row{
+    max-width: 1186px;
+    margin: auto;
+}
+
+logo{
+    height: 120px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+
+.main-nav{
+    float: right;
+    margin-top: 60px;
+}
+
+
+
+
+.main-nav li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 40px;
+    
+}
+
+.main-nav li a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    font-weight: 100;
+    
+    
+}
+
+.main-nav li a:hover{
+    border-bottom: 2px solid #bf55ec;
+}
+
+h1, h3{
+    color: #fff;
+    font-size: 200%;
+    letter-spacing: 3px;
+     margin-bottom: 20px;
+    text-transform: uppercase;
+    
+}
+
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: lighter;
+    text-decoration: none;
+    text-transform: : uppercase;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.main-content-header{
+    width: 1180px;
+    position:absolute;
+    top: 60%
+    left:60%    
+    transform: translate (-60%,-60%);  
+}
+
+.btn-full{
+    background-color: transparent;
+    color: purple;
+    margin-right: 15px;
+    border: 1px solid #bf55ec;
+    
+    }
+.btn-full:hover{
+    background-color: #fff;
+}
+
+.btn-nav{
+    background-color: transparent;
+    color: #fff;
+    border:1px solid #fff;
+    
+}
+
+.btn-nav:hover{
+    background-color:purple;
+}
+
+.colorchange{
+    animation: colorchangeEPLOAN 2s infinite;
+}
+
+@keyframes colorchangeEPLOAN{
+    0%{color: aqua}
+    25%{color: purple}
+    50%{color: #fff}
+    100%{color: purple}
+    
+}
+
+.color{
+    color: purple;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
